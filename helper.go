@@ -26,8 +26,7 @@ func isDeviceActive(device string) bool {
 		fmt.Println("Error checking loopback status:", err)
 		return false
 	}
-	o := string(output)
-	outputList := strings.Split(o, "\n")
+	outputList := strings.Split(string(output), "\n")
 
 	for _, line := range outputList {
 		if checkSubstrings(line, device, "RUNNING") {
