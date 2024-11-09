@@ -13,7 +13,7 @@
 
 You can manually install the `SimuAudio` CLI by cloning this repository and building it yourself, or you can use an installation script.
 
-### Installation via Script (Linux/macOS)
+### Installation via Script (Linux only)
 
 Run the following command in your terminal to install SimuAudio:
 
