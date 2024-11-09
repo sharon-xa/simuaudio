@@ -27,5 +27,5 @@ func isDeviceActive(device string) bool {
 		return false
 	}
 
-	return checkSubstrings(string(output), device, "RUNNING")
+	return checkSubstrings(string(output), device, "RUNNING") || checkSubstrings(string(output), device, "IDLE")
 }

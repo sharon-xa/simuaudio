@@ -47,10 +47,9 @@ simuaudio [flags] [device...]
    ```
    look for what device is running and what device is suspended, then run:
    ```bash
-   # simuaudio -s suspended_device_name
+   # simuaudio -s suspended_device_name or idle_device_name
    simuaudio -s alsa_output.pci-0000_0a_00.6.analog-stereo
    ```
-
 
    This will loop the audio from the capture device to the playback device, allowing both devices to play the same audio simultaneously.
 
