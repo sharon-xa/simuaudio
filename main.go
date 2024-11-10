@@ -70,10 +70,13 @@ func startSimuAudio() {
 
 func killSimuAudio() {
 	cmd := exec.Command("pactl", "unload-module", "module-combine-sink")
-	if err := cmd.Run(); err != nil {
+	output, err := cmd.CombinedOutput()
+	if err != nil {
 		fmt.Println("Failed to stop simultaneous audio playback:", err)
-	} else {
+	} else if strings.TrimSpace(string(output)) == "" {
 		fmt.Println("Simultaneous audio playback stopped.")
+	} else {
+		fmt.Println("No module-combine-sink to kill")
 	}
 }
 
