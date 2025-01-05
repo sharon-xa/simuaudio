@@ -14,7 +14,7 @@ type Data struct {
 }
 
 func StartSimuAudio(devices map[string]int) {
-	// check if we have a connection already
+	// check for existing sinks
 	fs, err := storage.NewFileStorage("simuaudio", "data.json")
 	if err != nil {
 		fmt.Println(err)

@@ -9,7 +9,7 @@ for arch in "${architectures[@]}"; do
     output_name="builds/simuaudio-linux-$arch"
     echo "Building for linux/$arch..."
 
-    env GOOS=linux GOARCH=$arch go build -o $output_name
+    env GOOS=linux GOARCH="$arch" go build -o "$output_name"
 
     if [ $? -ne 0 ]; then
       echo "Failed to build for linux/$arch"

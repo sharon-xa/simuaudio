@@ -15,7 +15,7 @@ SimuAudio is a Command-Line Interface (CLI) tool for managing simultaneous audio
 
 You can manually install the `SimuAudio` CLI by cloning this repository and building it yourself, or you can use an installation script.
 
-### Installation via Script (Linux only)
+### Installation via Script
 
 Run the following command in your terminal to install SimuAudio:
 
@@ -41,12 +41,12 @@ simuaudio [flags] [device...]
 
 ### Flags
 
-| Flag        | Description                                                         |
-|-------------|---------------------------------------------------------------------|
-| `-s`        | Start simultaneous audio playback between devices.                  |
-| `-k`        | Kill all active playback processes, stopping audio playback between devices. |
-| `-l`        | List all available audio devices.                                   |
-| `-h`        | Show the help message with available operations.                    |
+| Flag | Description                                                                  |
+| ---- | ---------------------------------------------------------------------------- |
+| `-s` | Start simultaneous audio playback between devices.                           |
+| `-k` | Kill all active playback processes, stopping audio playback between devices. |
+| `-l` | List all available audio devices.                                            |
+| `-h` | Show the help message with available operations.                             |
 
 ### Example Usage
 
