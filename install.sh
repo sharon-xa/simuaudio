@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="v1.1.1"
+VERSION="v0.5.0"
 BINARY_NAME="simuaudio"
 
 OS="$(uname | tr '[:upper:]' '[:lower:]')"
