@@ -26,12 +26,10 @@ curl -fsSL https://raw.githubusercontent.com/sharon-xa/simuaudio/main/install.sh
 
 ## Dependencies
 
-1. PipeWire
+1. pipewire
 2. pipewire-pulse (called pipewire-pulseaudio on Fedora)
 3. pipewire-alsa
 4. wireplumber
-5. pipewire-utils
-6. pulseaudio-utils
 
 ## Usage
 
@@ -125,5 +123,4 @@ If you encounter issues with **SimuAudio**, here are some steps that might help:
 6. **Check Error Messages**: If a command fails, SimuAudio provides detailed error messages to help diagnose the issue.
 
 This CLI simplifies the management of audio output on multiple devices, leveraging PipeWire’s advanced features for seamless audio sharing.
-
 
